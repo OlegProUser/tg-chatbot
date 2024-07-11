@@ -76,7 +76,7 @@ def info(message):
         mode[chat_id] = False
     if chat_id not in chat_data:
         chat_data[chat_id] = []
-    if ((message.text.count('секс') > 0)or(message.text.lower().count("порн") > 0)or(message.text.lower().count("porn") > 0)or(message.text.lower().count("fuck") > 0)or(message.text.lower().count("наркот") > 0) or(message.text.lower().count("сука") > 0)or(message.text.lower().count("drug") > 0)):
+    if ((message.text.count('с-с') > 0)or(message.text.lower().count("-н") > 0)or(message.text.lower().count("p-n") > 0)or(message.text.lower().count("f-k") > 0)or(message.text.lower().count("н-от") > 0) or(message.text.lower().count("с--а") > 0)or(message.text.lower().count("d-") > 0)):
         bot.send_message(message.chat.id, "я не буду отвечать на такой вопрос")
     else:
         if mode[chat_id]:
