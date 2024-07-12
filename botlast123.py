@@ -9,7 +9,6 @@ def ask_anything(m):
     messages=m,
 	)
 	return response
-
 mode = {}
 lang = {}
 chat_data = {}
@@ -19,8 +18,8 @@ def toggle_mode():
 def lang_mode():
     global lang
     lang = not lang
-    
 @bot.message_handler(commands=['start','help', 'info', 'history','mode','modinfo','lang'])
+
 def main(message):
     chat_id = message.chat.id
     if chat_id not in chat_data:
@@ -100,5 +99,6 @@ def info(message):
 				ans = ask_anything(chat_data[chat_id])
 				bot.send_message(message.chat.id, 'Answer: ' + f'{ans}')
 				chat_data[chat_id].append({"role": "assistent", "content":ans})
+
 
 bot.infinity_polling()
