@@ -1,4 +1,9 @@
 # tg-chatbot
+You also can do bot like this with help the library of g4f, that's so easy:/ 
+
+
+
+
 link to bot: https://t.me/DeletuGPT4Free_bot
 
 sources:
